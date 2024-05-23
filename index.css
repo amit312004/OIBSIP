@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: rgba(180, 27, 27, 0.8); /* Semi-transparent black */
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/32824879819147.5ccf4b00984c7.png') ;
+    color: #ffff;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: rgba(232, 73, 29, 0.8); /* Semi-transparent orange */
+    color: #fff;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.latest-news {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+}
+
+.latest-news h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.news-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.news-grid article {
+    background: rgba(244, 244, 244, 0.9); /* Semi-transparent light gray */
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-grid article img {
+    width: 100%;
+    height: auto;
+}
+
+.news-grid article h3 {
+    margin: 1rem 0;
+}
+
+.news-grid article p {
+    margin-bottom: 1rem;
+}
+
+.news-grid article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent black */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
