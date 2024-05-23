@@ -3,33 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="photo-container">
-            <img src="resume1.jpg" alt="Your Photo">
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="converter">
+            <input type="number" id="inputValue" placeholder="Enter temperature">
+            <select id="inputUnit">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+            <button onclick="convert()">Convert</button>
+            <div id="result"></div>
         </div>
-        <h1>Amit kumar</h1>
-    </header>
-    <section class="introduction">
-        <h2>Introduction</h2>
-        <p>Hello, I'm Amit kumar, a passionate and dedicated web developer with a strong background in creating dynamic and responsive websites. My journey in web development began with a keen interest in technology and a desire to bring innovative ideas to life on the web. Over the years, I have honed my skills in various programming languages and frameworks, enabling me to build robust and user-friendly web applications.</p>
-    </section>
-    <section class="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Achievement 1: NPTEL DBMS Topper.</li>
-            <li>Achievement 2: 100+ leetcode problem solver .</li>
-            <li>Achievement 3: 9.85 cgpa .</li>
-        </ul>
-    </section>
-    <section class="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:your-email@example.com">a3110k2004@example.com</a></p>
-        <p>Phone: 75728458XX</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/amit-kumar-958059259/">Your LinkedIn Profile</a></p>
-    </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
